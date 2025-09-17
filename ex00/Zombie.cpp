@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/17 09:45:21 by mdahani           #+#    #+#             */
-/*   Updated: 2025/09/17 10:40:57 by mdahani          ###   ########.fr       */
+/*   Updated: 2025/09/17 12:48:12 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,4 +31,17 @@ Zombie::~Zombie(){
 
 void Zombie::announce(){
     std::cout << this->getName() << ": BraiiiiiiinnnzzzZ..." << std::endl;
+}
+
+// * Create two types of zombie
+
+Zombie *newZombie(std::string name){
+    Zombie *z = new Zombie("Foo");
+    return z;
+}
+
+Zombie zombie;
+void randomChump(std::string name){
+    zombie.setName("Bruno");
+    zombie.announce();    
 }
