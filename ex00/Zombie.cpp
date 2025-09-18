@@ -32,15 +32,3 @@ Zombie::~Zombie(){
 void Zombie::announce(){
     std::cout << this->getName() << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }
-
-// * Create two types of zombie
-Zombie *newZombie(std::string name){
-    Zombie *z = new Zombie("Foo");
-    return z;
-}
-
-Zombie zombie;
-void randomChump(std::string name){
-    zombie.setName("Bruno");
-    zombie.announce();    
-}

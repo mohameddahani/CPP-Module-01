@@ -40,5 +40,8 @@ class Zombie {
         std::string getName();
 };
 
+void randomChump(std::string name);
+Zombie *newZombie(std::string name);
+
 #endif
 

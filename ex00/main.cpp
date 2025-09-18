@@ -10,3 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "Zombie.hpp"
+
+int main(){
+    randomChump("Foo");
+    Zombie *z = newZombie("allocate zombie");
+    z->announce();
+    delete z;
+}
