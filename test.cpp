@@ -10,5 +10,17 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <iostream>
+#include <fstream>
 
+int main(){
 
+    // * Create a file
+    std::fstream MyFile("file.txt", std::ios::out);
+
+    // * write to file 
+    MyFile << "test fstream\n";
+
+    // * Close file
+    MyFile.close();
+}
