@@ -1,22 +1,14 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   zombieHorde.cpp                                    :+:      :+:    :+:   */
+/*   test.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/19 17:17:18 by mdahani           #+#    #+#             */
-/*   Updated: 2025/09/19 17:17:18 by mdahani          ###   ########.fr       */
+/*   Created: 2025/09/19 17:18:49 by mdahani           #+#    #+#             */
+/*   Updated: 2025/09/19 17:18:49 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
 
-// ! Definition of zombieHorde
-Zombie* zombieHorde( int N, std::string name ){
-    Zombie *hord = new Zombie[N];
-    for (int i = 0; i < N; i++){
-        hord[i].setName(name);
-    }
-    return hord;
-}
+
