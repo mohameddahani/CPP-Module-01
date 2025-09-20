@@ -12,7 +12,14 @@
 
 #include "Harl.hpp"
 
-int main(){
+int main(int ac, char **av){
+    if (ac != 1)
+    {
+        std::cout << "Run only the programe [harl]" << std::endl;
+        return 1;
+    }
+    (void)av;
+
     Harl msg;
     msg.complain("DEBUG");
     msg.complain("INFO");

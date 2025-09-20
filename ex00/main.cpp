@@ -12,7 +12,14 @@
 
 #include "Zombie.hpp"
 
-int main(){
+int main(int ac, char **av){
+    if (ac != 1)
+    {
+        std::cout << "Run only the programe [zombie]" << std::endl;
+        return 1;
+    }
+    (void)av;
+
     randomChump("Foo");
     Zombie *z = newZombie("allocate zombie");
     z->announce();
