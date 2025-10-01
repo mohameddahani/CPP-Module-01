@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/19 17:18:29 by mdahani           #+#    #+#             */
-/*   Updated: 2025/09/19 17:18:29 by mdahani          ###   ########.fr       */
+/*   Updated: 2025/10/01 15:08:11 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,10 @@
 void Weapon::setType(std::string value){
     this->type = value;
 }
-std::string Weapon::getType() const{
+const std::string &Weapon::getType(){
     return this->type;
 }
 
 Weapon::Weapon(std::string  type){
-    this->setType(type);
+    this->type = type;
 }

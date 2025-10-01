@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/19 17:18:36 by mdahani           #+#    #+#             */
-/*   Updated: 2025/09/19 17:18:36 by mdahani          ###   ########.fr       */
+/*   Updated: 2025/10/01 15:07:06 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ class Weapon {
 
         // * Getters and Setters
         void setType(std::string value);
-        std::string getType() const;
+        const std::string &getType();
 };
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/19 17:18:03 by mdahani           #+#    #+#             */
-/*   Updated: 2025/09/19 17:18:03 by mdahani          ###   ########.fr       */
+/*   Updated: 2025/10/01 16:22:52 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ std::string HumanB::getName(){
 }
 
 HumanB::HumanB(std::string name){
-        this->setName(name);
+        this->name = name;
 }
 
 void HumanB::setWeapon(Weapon &wp){
