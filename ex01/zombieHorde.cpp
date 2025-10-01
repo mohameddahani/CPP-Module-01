@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/19 17:17:18 by mdahani           #+#    #+#             */
-/*   Updated: 2025/09/19 17:17:18 by mdahani          ###   ########.fr       */
+/*   Updated: 2025/10/01 14:20:31 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 // ! Definition of zombieHorde
 Zombie* zombieHorde( int N, std::string name ){
-    Zombie *hord = new Zombie[N];
+    Zombie *horde = new Zombie[N];
     for (int i = 0; i < N; i++){
-        hord[i].setName(name);
+        horde[i].setName(name);
     }
-    return hord;
+    return horde;
 }
