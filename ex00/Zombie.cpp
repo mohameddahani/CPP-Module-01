@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/17 09:45:21 by mdahani           #+#    #+#             */
-/*   Updated: 2025/09/17 12:49:02 by mdahani          ###   ########.fr       */
+/*   Updated: 2025/10/01 10:55:50 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ std::string Zombie::getName(){
 }
 
 Zombie::Zombie(std::string nameOfZombie){
-    this->setName(nameOfZombie);
+    this->name = nameOfZombie;
 }
 
 Zombie::~Zombie(){

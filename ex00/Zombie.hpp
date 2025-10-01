@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/17 09:45:02 by mdahani           #+#    #+#             */
-/*   Updated: 2025/09/17 10:40:48 by mdahani          ###   ########.fr       */
+/*   Updated: 2025/10/01 10:56:04 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 
 
-// *Calsses
+// * Calsses
 class Zombie {
     // ! private
     private:
