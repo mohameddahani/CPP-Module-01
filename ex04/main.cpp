@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/19 17:16:04 by mdahani           #+#    #+#             */
-/*   Updated: 2025/09/19 17:16:04 by mdahani          ###   ########.fr       */
+/*   Updated: 2025/10/02 13:22:43 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ int main(int ac, char **av){
     std::string line;
 
     while (getline(inputFile, line)){
+        line += '\n';
         size_t pos = 0;
         while ((pos = line.find(string1, pos)) != std::string::npos)
         {
@@ -48,7 +49,7 @@ int main(int ac, char **av){
             line.insert(pos, string2);
             pos += string2.length();
         }
-        outputFile << line << std::endl;
+        outputFile << line;
     }
     inputFile.close();
     outputFile.close();
