@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/20 10:03:57 by mdahani           #+#    #+#             */
-/*   Updated: 2025/09/20 10:03:57 by mdahani          ###   ########.fr       */
+/*   Updated: 2025/10/03 20:02:01 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,18 +46,28 @@ void Harl::complain(std::string level){
     // ! Pointer to Member Function:
     void (Harl::*funcsPtr[])() = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
 
-    int start = -1;
+    int index = -1;
     for (int i = 0; i < 4; i++){
         if (level == levels[i]){
-            start = i;
+            index = i;
             break;
         }
     }
-    if (start == -1){
-        std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
-        return;
-    }
-    for (int i = start; i < 4; i++){
-        (this->*funcsPtr[i])();
+
+    switch (index){
+        case 0:
+            (this->*funcsPtr[0])();
+            // fall through
+        case 1:
+            (this->*funcsPtr[1])();
+            // fall through
+        case 2:
+            (this->*funcsPtr[2])();
+            // fall through
+        case 3:
+            (this->*funcsPtr[3])();
+            break;
+        default:
+            std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
     }
 }
