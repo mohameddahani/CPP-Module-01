@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/19 17:16:04 by mdahani           #+#    #+#             */
-/*   Updated: 2025/10/02 13:22:43 by mdahani          ###   ########.fr       */
+/*   Updated: 2025/10/04 10:10:49 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,14 +26,14 @@ int main(int ac, char **av){
 
     // * Open the file
     std::ifstream inputFile(fileName.c_str());
-    if (!inputFile){
+    if (!inputFile.is_open()){
         std::cout << "Cannot open file!" << std::endl;
         return 1;
     }
 
     // * Create a file
     std::ofstream outputFile("outputFile.txt");
-    if (!outputFile){
+    if (!outputFile.is_open()){
         std::cout << "Cannot Create output file!" << std::endl;
         return 1;
     }
@@ -43,8 +43,7 @@ int main(int ac, char **av){
     while (getline(inputFile, line)){
         line += '\n';
         size_t pos = 0;
-        while ((pos = line.find(string1, pos)) != std::string::npos)
-        {
+        while ((pos = line.find(string1, pos)) != std::string::npos){
             line.erase(pos, string1.length());
             line.insert(pos, string2);
             pos += string2.length();
