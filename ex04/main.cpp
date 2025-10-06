@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/19 17:16:04 by mdahani           #+#    #+#             */
-/*   Updated: 2025/10/04 10:10:49 by mdahani          ###   ########.fr       */
+/*   Updated: 2025/10/06 11:36:37 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,9 @@ int main(int ac, char **av){
     }
 
     // * Create a file
-    std::ofstream outputFile("outputFile.txt");
+    std::string replaceFile = fileName + ".replace";
+
+    std::ofstream outputFile(replaceFile.c_str());
     if (!outputFile.is_open()){
         std::cout << "Cannot Create output file!" << std::endl;
         return 1;
